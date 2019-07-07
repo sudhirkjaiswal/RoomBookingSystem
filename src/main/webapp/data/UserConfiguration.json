@@ -1,0 +1,43 @@
+{
+	"manager":"UserManager",
+	"key":"uid",
+	"selection":"multiple",
+	"name":"User Management",
+	"layout":[
+			{"name": "User Id", "field": "userId", "width":"100px","onAdd":true,"require":true,"igroreOnChild":true},
+			{"name": "User Name", "field": "userName","width":"150px","onAdd":true,"require":true},
+			{"name": "Role", "field": "role","width":"150px","onAdd":true,"require":true,"type":"Select","options":[{"value":"ADMIN","label":"ADMIN"},{"value":"USER","label":"USER"}]},
+			{"name": "Mobile", "field": "mobile","width":"150px","onAdd":true,"require":true},
+			{"name": "E-Mail", "field": "email","width":"150px","onAdd":true,"require":true},
+			{"name": "Last Passwd Changed", "field": "lastPaswdChanged","width":"150px","_decorator":"DateTime","igroreOnChild":true},
+			{"name": "Last Login", "field": "lastLogin","width":"150px","_decorator":"DateTime"},
+			{"name": "Description", "field": "description", "width": "230px","onAdd":true,"type":"Textarea"},
+			{"name": "Working BBUs","field":"user","type":"BBUManager","ignoreOnManager":true,"igroreOnChild":true},
+			{"name": "Booking History","field":"user","type":"UserHistory","ignoreOnManager":true,"igroreOnChild":true}
+	],
+	"iconClass":"owner",
+	"tools":[
+		{
+			"label":"Create",
+			"iconClass":"dijitIconNewTask",
+			"action":"add",
+			"show":["ADMIN"]
+		},{
+			"label":"Delete",
+			"iconClass":"dijitIconDelete",
+			"action":"delete",
+			"show":["ADMIN"]
+		},
+		{
+			"label":"Edit",
+			"iconClass":"dijitIconEditTask",
+			"action":"edit",
+			"show":["ADMIN"]
+		},{
+			"label":"View",
+			"iconClass":"viewDetail",
+			"action":"view",
+			"show":["ADMIN"]
+		}
+	]
+}

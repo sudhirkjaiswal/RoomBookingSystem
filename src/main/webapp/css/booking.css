@@ -1,0 +1,363 @@
+
+@import "../lib/dojo/dijit/themes/dijit.css";
+@import "../lib/dojo/dijit/themes/claro/claro.css";
+@import "../lib/dojo/gridx/resources/claro/Gridx.css";
+@import "../lib/dojo/dojox/form/resources/CheckedMultiSelect.css";
+@import "../lib/dojo/dojox/layout/resources/ExpandoPane.css";
+@import "../lib/dojo/dojox/widget/Wizard/Wizard.css";
+@import "../lib/dojo/dojox/form/resources/UploaderFileList.css";
+
+@import "../lib/dojo/dojox/calendar/themes/claro/Calendar.css";
+@import "../lib/dojo/dojox/calendar/tests/calendar.css";
+//@import "../lib/dojo/dojo/resources/dojo.css";
+
+
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+.claro .dijitContentPane {
+    padding: 0px !important;
+}
+
+.dijitCalendar .Highlighted {
+	background-color: #fff0b4;
+}
+.dijitCalendar .Highlighted .dijitCalendarDateLabel {
+	color: red !important;
+	border: solid 1px #fff0b4;
+}
+
+.mblRoundRect {
+    background-color: #CDCDCF;
+    border: 1px solid #adaaad;
+    border-radius: 8px;
+    margin: 7px 9px 16px;
+    padding: 8px;
+}
+.loginpan{
+	 background-color:white;
+	 background-image: url("../images/meeting.PNG");
+	 background-repeat: no-repeat;
+	 width: 100%;
+	 height: 100%;
+}
+
+.claro .dijitSplitContainer-child, .claro .dijitBorderContainer-child {
+    border: none !important;
+}
+
+.helpDropdownIcon{
+	width: 32px; 
+	height:32px;
+	background-image:url('../images/Setting-icon.png');
+}
+.helpDropdown{
+	position: absolute;
+	right: 10px;
+	top: 56px;
+}
+.helpDropdown > span {
+    border: medium none !important;
+	padding:0 !important;
+	background-color:white !important;
+	box-shadow:none !important;
+}
+
+.claro .dijitSelectMenu .dijitMenuItemHover td, .claro .dijitSelectMenu .dijitMenuItemSelected td, .claro .dijitMenuItemHover, .claro .dijitMenuItemSelected{
+	background-color: #00679E !important;
+	color: #ffffff !important;
+	background-image: none;
+}
+.claro .dijitMenuItem {
+    color: #00679e;
+    font-weight: bold;
+}
+
+
+.help{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/help.png');
+}
+.about{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/about.png');
+}
+.ch_pass{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/ch_pass.png');
+}
+.lock{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/lock.png');
+}
+
+.permit{
+	width: 24px; 
+	height:24px;
+	background-image:url('../images/owner.png');
+	background-repeat: no-repeat;
+}
+
+.refresh{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/refresh.png');
+}
+.calender_32x32{
+	width: 32px; 
+	height:32px;
+	background-image:url('../images/calendar.png');
+}
+.calender_16x16{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/calendar_16x16.png');
+}
+
+.owner{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/owner.png');
+}
+.viewDetail{
+	width: 16px; 
+	height:16px;
+	background-image:url('../images/view_detail.png');
+}
+.successIcon {
+    background-image: url("../images/success.png");
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+}
+.toolkit_confirm_dialog_icon{
+        background-image: url("../images/confirm.png");
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+} 
+.toolkit_info_dialog_icon{
+        background-image: url("../images/info.png");
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+} 
+.toolkit_warning_dialog_icon{
+        background-image: url("../images/warning.png");
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+} 
+.toolkit_error_dialog_icon{
+        background-image: url("../images/error.png");
+        background-repeat: no-repeat;
+        height: 32px;
+        width: 32px;
+} 
+.nextIcon {
+   background-image: url("../images/next.png");
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+}
+.finishIcon {
+   background-image: url("../images/finish.png");
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+}  
+.cancelIcon {
+   background-image: url("../images/cancel.png");
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+}  
+.homeIcon {
+   background-image: url("../images/Home.png");
+   background-repeat: no-repeat;
+   height: 32px;
+   width: 32px;
+}  
+
+.containerTable {
+  display: table;
+  margin: 10px !important;
+}
+.row {
+  display: table-row;        
+}   
+.cell {
+  display: table-cell;
+  padding: 10px !important;
+  /*vertical-align: top;*/
+}
+.indicator{color:red;}
+.indicator:after{content:'*';font-size:16px;}
+
+.YangHelp{
+	display:inline-flex;
+	position:relative;
+}
+.iTooltip:hover{text-decoration:none;}
+.iTooltip:hover:after{
+    /*color:#fff;
+    font-size: 12px;
+    background:#000;
+    background:rgba(0,0,0,.8);
+    padding:3px 8px; */   
+    content:attr(data-title);
+    display:block;
+    position:fixed;
+    left:30%;
+    bottom:18px;
+    z-index:8;
+    min-width: 385px;
+    background-color: #ffffff;
+    background-image: -moz-linear-gradient(center bottom , rgba(207, 229, 250, 0.1) 0px, #ffffff 10px);
+    background-position: center bottom;
+    border: 1px solid #759dc0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    font-size: 1em;
+    padding: 6px 8px;
+    
+  }
+/*.iTooltip:hover:before{
+    border:solid;
+    border-color:rgba(0,0,0,.8) transparent;
+    border-width:6px 6px 0 6px;
+    content:"";
+    display:block;
+    position:absolute;
+    left:50%;
+    bottom:12px;
+    z-index:9
+   }*/
+   
+   .YangListBox {
+    	width: 238px;
+    	margin-bottom:10px;
+    	margin-right: 5px;
+	}
+ .YangListBox > .dojoxCheckedMultiSelectWrapper{
+            width:100%;
+            margin:0 !important;
+  }    
+  .hide {
+  	display: none;
+  }  
+  .toolkitDialogButtonContainer{
+    bottom: 0; 
+    padding: 10px 0;
+    text-align: center;
+} 
+
+.titleDivRotate {
+    left: -84px;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: right;
+    transform: rotate(-90deg);
+    transform-origin: right bottom 0;
+    /*width: 95px;*/
+}
+.claro .dojoxExpandoTitle {
+    color: #00679e;
+    font-weight: lighter;
+    padding: 5px 7px;
+    border-style: none;
+}
+.dojoxExpandoTitleNode{
+	padding-left:0;
+}
+
+.stepHeader li {        
+   display: inline-block;
+   font-weight:bold;
+}
+.stepHeader li > span {
+   margin-right:20px;      
+   display: inline-block;
+   margin: 0;
+   padding: 10px 15px;
+}
+   
+.stepSelected {
+   color:#00679E;
+   border:1px solid #00679E;
+   background-color: #ffffff ;        
+}
+.stepUnselected {
+   color:#ffffff;       
+   border:1px solid #ffffff;
+   background-color: #00679E;
+}
+
+
+.datetime {
+  border: 1px solid #759dc0;
+  background: white;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.datetime > .dijitDateTextBox {
+  border: none;
+  padding-left: .25em;
+  width: 6.5em;
+}
+
+.datetime > .dijitDateTextBox > .dijitButtonNode {
+  border: none;
+  background-image: url("../images/date.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+}
+
+.datetime > .dijitDateTextBox > .dijitButtonNode > .dijitArrowButtonInner,
+.datetime > .dijitTimeTextBox > .dijitButtonNode > .dijitArrowButtonInner {
+  display: none;
+}
+
+.datetime > .dijitTimeTextBox {
+  border: none;
+  padding-left: .25em;
+  width: 7.25em;
+}
+
+.datetime > .dijitTimeTextBox > .dijitArrowButton {
+  border: none;
+  background-image: url("../images/time.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+}
+
+.datetime > .timezone {
+  display: inline-block;
+  height: 22px;
+  width: 2em;
+  padding-left: .25em;
+}
+
+.datetime > .dijitTimeTextBox > .dijitInputContainer > span.dijitPlaceHolder {
+  padding-top: 2px;
+}

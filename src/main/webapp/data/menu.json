@@ -1,0 +1,32 @@
+{
+	"menu":[{
+			"id":"1",
+			"label":"Room",
+			"class":"",
+			"iconClass":"homeIcon",
+			"type":"MenuBarItem",
+			"show":["ADMIN","USER"]
+		},{
+			"id":"2",
+			"label":"My Booking",
+			"class":"",
+			"iconClass":"calender_32x32",
+			"type":"MenuBarItem",
+			"show":["ADMIN","USER"]
+		},{
+			"id":"3",
+			"label":"Calender",
+			"class":"",
+			"iconClass":"calender_32x32",
+			"type":"MenuBarItem",
+			"show":["ADMIN","USER"]
+		},{
+			"id":"4",
+			"label":"User",
+			"class":"",
+			"iconClass":"permit",
+			"type":"MenuBarItem",
+			"show":["ADMIN"]
+		}
+	]
+}

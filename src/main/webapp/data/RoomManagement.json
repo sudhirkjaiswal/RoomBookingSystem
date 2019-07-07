@@ -1,0 +1,47 @@
+{
+	"manager":"RoomManager",
+	"key":"uid",
+	"name":"Room Information",
+	"layout":[
+			{"name": "Name", "field": "name", "width": "150px","onAdd":true,"require":true},
+			{"name": "Location", "field": "location", "width": "150px","onAdd":true},
+			{"name": "Capacity", "field": "capacity", "width": "150px","onAdd":true,"require":true},
+			{"name": "Is AudioConference", "field": "audioConference","type":"CheckBox", "width": "150px","onAdd":true},
+			{"name": "Is VideoConference", "field": "videoConference","type":"CheckBox","width": "150px","onAdd":true},
+			{"name": "Description", "field": "description", "width": "250px","onAdd":true,"type":"Textarea"}
+	],
+	"iconClass":"homeIcon",
+	"tools":[{
+			"label":"Add",
+			"type":"Button",
+			"iconClass":"dijitIconNewTask",
+			"tooltip":"",
+			"action":"add",
+			"show":["ADMIN"]
+		},{
+			"label":"Delete",
+			"type":"Button",
+			"iconClass":"dijitIconDelete",
+			"tooltip":"",
+			"action":"delete",
+			"show":["ADMIN"]
+		},{
+			"label":"Edit",
+			"type":"Button",
+			"iconClass":"dijitIconEditTask",
+			"tooltip":"",
+			"action":"edit",
+			"show":["ADMIN"]
+		},{
+			"label":"Reservation",
+			"iconClass":"calender_16x16",
+			"action":"reservation",
+			"show":["ADMIN","USER"]
+		},{
+			"label":"View",
+			"iconClass":"viewDetail",
+			"action":"view",
+			"show":["ADMIN","USER"]
+		}
+	]
+}

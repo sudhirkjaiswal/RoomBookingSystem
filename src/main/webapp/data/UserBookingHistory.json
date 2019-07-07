@@ -1,0 +1,22 @@
+{
+	"manager":"UserBookingManager",
+	"key":"uid",
+	"name":"User's Booking History",
+	"layout":[
+			{"name": "Room", "field": "room", "width": "150px","_decorator":{"type":"link","id":"uid","display":"name"},"type":"RoomManager"},
+			{"name": "Booked From", "field": "bookedAt", "width": "150px","_decorator":"DateTime"},
+			{"name": "Expire At", "field": "expireAt", "width": "150px","_decorator":"DateTime"},
+			{"name": "Status", "field": "status", "width": "150px"},
+			{"name": "User's' Comments", "field": "comments", "width": "250px"}
+	],
+	"iconClass":"homeIcon",
+	"tools":[{
+			"label":"Cancel",
+			"type":"Button",
+			"iconClass":"dijitIconDelete",
+			"tooltip":"",
+			"action":"cancel",
+			"show":["ADMIN","USER"]
+		}
+	]
+}
